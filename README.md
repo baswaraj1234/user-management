@@ -34,7 +34,20 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
     - Protect against NoSQL injection attacks
     - secure headers
 
-## Setup Instructions
+## Setup Instructions. 
+- Below is the folder structure of the project
+user-management/
+├── backend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── ...
+├── frontend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── ...
+├── docker-compose.yml
+├── README.md
+
 ### Development Setup
 #### Frontend:
 1. Navigate to the frontend directory:
@@ -73,7 +86,6 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
     ```bash
     npm test
     ```
-
 #### Frontend:
 1. Navigate to the frontend directory:
     ```bash
