@@ -1,0 +1,4 @@
+{
+    "roots": ["tests/"],
+    "testTimeout": 100000
+}

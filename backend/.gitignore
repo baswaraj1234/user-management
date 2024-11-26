@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+
+# Environment variables
+.env
+.env.*
+
+#Unit test reports
+coverage/
+
+# Build outputs
+dist/
+build/
+
+# IDE and editor specific files
+.vscode/

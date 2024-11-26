@@ -1,0 +1,59 @@
+/* Styling for the body element: global layout and appearance */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Main container for the entire app layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content section with padding and centered text */
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main area with padding and vertical scrolling enabled */
+main {
+  flex: 1;
+  padding: 1.25rem; 
+  overflow-y: auto;
+}
+
+/* Footer fixed at the bottom of the page */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 8px 0;
+  z-index: 1200;
+}
+
+/* Highlighting header buttons */
+.navButton {
+  text-decoration: none; /* Remove underline by default */
+  color: #ffffff;
+}
+
+.navButton.active .MuiButton-root {
+  text-decoration: underline; /* Underline the active link */
+  color: #ffffff;
+}
+
+/* Page not found redirection button resize */
+.pageNotFound {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

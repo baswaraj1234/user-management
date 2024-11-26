@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mern-stack-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "5000:5000" 
+    networks:
+      - mern-stack-network
+    volumes:
+      - ./backend:/src
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/user-management
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - WATCHPACK_POLLING=true
+    networks:
+      - mern-stack-network
+    volumes:
+      - ./frontend:/src
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
+
+networks:
+  mern-stack-network:
+    driver: bridge  # Default bridge network driver (optional)
+
