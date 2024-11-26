@@ -101,10 +101,18 @@ user-management/
     docker-compose up --build
     ```
 2. Once the containers are created and services are running the application can be accessed. Access the application using below url's
-    - Frontend: http://localhost:3000
-    - Backend API: http://localhost:5000
+    - Frontend: [http://localhost:3000](http://localhost:3000)
+    - Backend API: [http://localhost:5000](http://localhost:5000)
 
-3. Stop the application:
+3. Application has 2 API's
+   1. Api used to get the users list
+       - [http://localhost:5000/api/users](http://localhost:5000/api/users)
+         - Method: GET
+   2. API used to create new user
+       - [http://localhost:5000/api/users](http://localhost:5000/api/users)
+         - Method: POST
+     
+5. Stop the application:
     ```bash
     docker-compose down
     ``` # user-management
