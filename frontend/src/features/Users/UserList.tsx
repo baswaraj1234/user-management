@@ -36,7 +36,7 @@ const UserList: React.FC = () => {
       })
       .catch((error) => {
           // Handle other errors
-          if(error.response.data.error) toast.error(error.response.data.error);
+          if(error.response?.data?.error) toast.error(error.response?.data?.error);
       });
   }, []);
 
