@@ -95,18 +95,14 @@ user-management/
     ```bash
     npm test
     ```
-## Prerequisites
-To run this project locally, ensure the following are installed on your machine:
-- Docker (including Docker Compose)
-
 ## Docker Setup
 1. Build and run the application using Docker Compose:
     ```bash
     docker-compose up --build
     ```
-2. Access the application:
-    - Frontend: [http://localhost:3000](http://localhost:3000)
-    - Backend API: [http://localhost:5000](http://localhost:5000)
+2. Once the containers are created and services are running the application can be accessed. Access the application using below url's
+    - Frontend: http://localhost:3000
+    - Backend API: http://localhost:5000
 
 3. Stop the application:
     ```bash
