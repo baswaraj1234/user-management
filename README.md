@@ -99,4 +99,4 @@ To run this project locally, ensure the following are installed on your machine:
 3. Stop the application:
     ```bash
     docker-compose down
-    ``` 
+    ``` # user-management
