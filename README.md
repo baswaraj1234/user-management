@@ -36,11 +36,9 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
     - Redirecting the user to 'Page not found' error page if they attempt to access an unauthorized or invalid route by modifying the URL
       
 ## Installation
-### Github repository link
-- [https://github.com/baswaraj1234/user-management](https://github.com/baswaraj1234/user-management)
 ### Clone the Repository
 - Open a terminal or command prompt and Run the following command to clone the project from GitHub:
-  - https://github.com/baswaraj1234/user-management.git
+  - git clone "https://github.com/baswaraj1234/user-management.git"
 ## Setup Instructions. 
 - Below is the folder structure of the project
 user-management/
