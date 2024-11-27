@@ -9,7 +9,7 @@ const router = Router();
 router.get('/users', async (req, res) => {
   try {
     logger.info('Fetching all users...');
-    const users: IUser[] = await User.find();
+    const users: IUser[] = await User.find().sort({_id:-1});
     logger.info(`Fetched ${users.length} users successfully.`);
     res.json(users);
   } catch (err:any) {
