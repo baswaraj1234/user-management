@@ -39,7 +39,7 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
 ### Clone the Repository
 - Open a terminal or command prompt and Run the following command to clone the project from GitHub:
   - git clone "https://github.com/baswaraj1234/user-management.git"
-## Setup Instructions. 
+## Setup Instructions 
    - The following represents the folder structure at the root level of the project:
      
   ![image](https://github.com/user-attachments/assets/77d2d0ee-a273-4eee-9720-ba5d11dcac21)
