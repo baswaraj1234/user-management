@@ -36,7 +36,7 @@ const CreateUser: React.FC = () => {
     onSubmit: async (values, { resetForm }) => {
       try {
         // Make a POST request to create a user
-        await axios.post("http://localhost:5000/api/users", values);
+        await axios.post(`${process.env.REACT_APP_API_URL}`, values);
         toast.success("User created successfully!");
         resetForm(); // Clear form fields
         // Set focus back to the first name field

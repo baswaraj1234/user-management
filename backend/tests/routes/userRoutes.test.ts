@@ -34,7 +34,10 @@ describe("User Routes", () => {
         },
       ];
         // Mock the User model's `find` method to return mock users
-      (User.find as jest.Mock).mockResolvedValue(mockUsers);
+      //(User.find as jest.Mock).mockResolvedValue(mockUsers);
+      (User.find as jest.Mock).mockImplementation(() => ({
+        sort: jest.fn().mockResolvedValue(mockUsers),
+      }));
 
       const response = await request(app).get("/api/users");
 

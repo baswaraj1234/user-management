@@ -29,7 +29,7 @@ describe("UserList Component", () => {
             { _id: "2", firstName: "Jane", lastName: "Doe", email: "jane@example.com" },
         ];
 
-        mock.onGet("http://localhost:5000/api/users").reply(200, users);
+        mock.onGet(`${process.env.REACT_APP_API_URL}`).reply(200, users);
 
         render(<UserList />);
 

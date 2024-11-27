@@ -29,7 +29,7 @@ const UserList: React.FC = () => {
   useEffect(() => {
     // Make a GET request to fetch user data from the backend
     axios
-      .get("http://localhost:5000/api/users")
+      .get(`${process.env.REACT_APP_API_URL}`)
       .then((response) => {
         setUsers(response.data)
         console.log('Fetched user data successfully');
