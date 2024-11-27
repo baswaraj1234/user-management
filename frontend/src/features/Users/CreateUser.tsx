@@ -23,11 +23,11 @@ const CreateUser: React.FC = () => {
     // Define validation schema using Yup
     validationSchema: Yup.object({
       firstName: Yup.string()
-        .matches(/^[a-zA-Z]+$/, "Must contain only letters")
+        .matches(/^[a-zA-Z]+$/, "First name must contain only alphabets")
         .max(100, "Must be 100 characters or less")
         .required("Required"),
       lastName: Yup.string()
-        .matches(/^[a-zA-Z]+$/, "Must contain only letters")
+        .matches(/^[a-zA-Z]+$/, "Last name must contain only alphabets")
         .max(100, "Must be 100 characters or less")
         .required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
