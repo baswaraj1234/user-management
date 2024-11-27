@@ -33,7 +33,7 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
     - Sanitize incoming request data to protect from XSS
     - Protect against NoSQL injection attacks
     - secure headers
-    - Redirecting the user to an error page if they attempt to access an unauthorized or invalid route by modifying the URL
+    - Redirecting the user to 'Page not found' error page if they attempt to access an unauthorized or invalid route by modifying the URL
 
 ## Setup Instructions. 
 - Below is the folder structure of the project
