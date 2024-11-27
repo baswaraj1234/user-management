@@ -34,7 +34,11 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
     - Protect against NoSQL injection attacks
     - secure headers
     - Redirecting the user to 'Page not found' error page if they attempt to access an unauthorized or invalid route by modifying the URL
-
+      
+## Installation
+### Clone the Repository
+- Open a terminal or command prompt and Run the following command to clone the project from GitHub:
+  - [https://github.com/baswaraj1234/user-management](https://github.com/baswaraj1234/user-management)
 ## Setup Instructions. 
 - Below is the folder structure of the project
 user-management/
@@ -65,6 +69,7 @@ user-management/
     ```
 
 #### Backend:
+In .env file comment "MONGO_URI=mongodb://mongo:27017/user-management" and uncomment "MONGO_URI=mongodb://localhost:27017/user-manage" to connect to local database
 1. Navigate to the backend directory:
     ```bash
     cd backend
