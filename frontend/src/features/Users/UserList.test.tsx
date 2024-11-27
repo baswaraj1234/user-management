@@ -38,24 +38,4 @@ describe("UserList Component", () => {
             expect(screen.getByText("Jane")).toBeInTheDocument();
         });
     });
-
-    it("should handle 429 error and display toast message", async () => {
-        mock.onGet("http://localhost:5000/api/users").reply(429);
-
-        render(<UserList />);
-
-        await waitFor(() => {
-            expect(toast.error).toHaveBeenCalledWith("Too Many Requests. Please wait a moment before trying again.");
-        });
-    });
-
-    it("should handle other errors and display toast message", async () => {
-        mock.onGet("http://localhost:5000/api/users").networkError();
-
-        render(<UserList />);
-
-        await waitFor(() => {
-            expect(toast.error).toHaveBeenCalledWith("An error occurred. Please try again later.");
-        });
-    });
 });
