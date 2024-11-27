@@ -40,18 +40,31 @@ This is a web application built using the MERN stack (MongoDB, Express.js, React
 - Open a terminal or command prompt and Run the following command to clone the project from GitHub:
   - git clone "https://github.com/baswaraj1234/user-management.git"
 ## Setup Instructions. 
-- Below is the folder structure of the project
-user-management/
-├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── ...
-├── frontend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── ...
-├── docker-compose.yml
-├── README.md
+   - The following represents the folder structure at the root level of the project:
+     
+  ![image](https://github.com/user-attachments/assets/77d2d0ee-a273-4eee-9720-ba5d11dcac21)
+
+## Application setup using Docker
+1. Build and run the application using Docker Compose:
+    ```bash
+    docker-compose up --build
+    ```
+2. Once the containers are created and services are running the application can be accessed. Access the application using below url's
+    - Frontend: [http://localhost:3000](http://localhost:3000)
+    - Backend API: [http://localhost:5000](http://localhost:5000)
+
+3. Application has 2 API's
+   1. Api used to get the users list
+       - [http://localhost:5000/api/users](http://localhost:5000/api/users)
+         - Method: GET
+   2. API used to create new user
+       - [http://localhost:5000/api/users](http://localhost:5000/api/users)
+         - Method: POST
+     
+5. Stop the application:
+    ```bash
+    docker-compose down
+    ``` # user-management
 
 ### Development Setup
 #### Frontend:
@@ -101,24 +114,3 @@ In .env file comment "MONGO_URI=mongodb://mongo:27017/user-management" and uncom
     ```bash
     npm test
     ```
-## Docker Setup
-1. Build and run the application using Docker Compose:
-    ```bash
-    docker-compose up --build
-    ```
-2. Once the containers are created and services are running the application can be accessed. Access the application using below url's
-    - Frontend: [http://localhost:3000](http://localhost:3000)
-    - Backend API: [http://localhost:5000](http://localhost:5000)
-
-3. Application has 2 API's
-   1. Api used to get the users list
-       - [http://localhost:5000/api/users](http://localhost:5000/api/users)
-         - Method: GET
-   2. API used to create new user
-       - [http://localhost:5000/api/users](http://localhost:5000/api/users)
-         - Method: POST
-     
-5. Stop the application:
-    ```bash
-    docker-compose down
-    ``` # user-management
